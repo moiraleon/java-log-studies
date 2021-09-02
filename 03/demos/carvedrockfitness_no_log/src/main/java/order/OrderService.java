@@ -20,6 +20,11 @@ public class OrderService {
             fileHandler = new FileHandler(OrderService.class.getSimpleName() + " .log");
             //change formatting from xml formatting to simple formatting
             fileHandler.setFormatter(new SimpleFormatter());
+            //adding Log Filters
+           /* Filter filterAll = s -> false;
+            fileHandler.setFilter(filterAll); *///this will affect the Log file but not the console
+//            Filter filterAll = s -> false;
+//            LOGGER.setFilter(filterAll); influences the console
         } catch (IOException e){
             e.printStackTrace();
         }

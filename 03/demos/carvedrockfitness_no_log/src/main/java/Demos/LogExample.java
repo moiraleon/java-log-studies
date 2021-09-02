@@ -63,3 +63,11 @@ LOGGER.logrb(Level.INFO, ResourceBundle.getBundle("en_US"), "This is an example 
 
 log resource bundle, great for localization
  */
+
+/*
+Log Filters Notes
+
+Need to add a log interface
+
+
+ */
