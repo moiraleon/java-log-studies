@@ -6,11 +6,14 @@ import java.util.logging.Logger;
 
 public class LogExample {
     private static final Logger LOGGER= Logger.getLogger(LogExample.class.getName());
-    public static void main(String[] args) {
+    static {
         LOGGER.setLevel(Level.FINEST);
         ConsoleHandler consoleHandler = new ConsoleHandler();
         consoleHandler.setLevel(Level.FINEST);
         LOGGER.addHandler(consoleHandler);
+    }
+
+    public static void main(String[] args) {
         LOGGER.log(Level.FINEST,"This is an example message");
     }
 }
