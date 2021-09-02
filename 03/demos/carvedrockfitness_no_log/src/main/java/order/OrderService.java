@@ -18,6 +18,8 @@ public class OrderService {
         try {
             //ConsoleHandler consoleHandler = new ConsoleHandler(); changing from ConsoleHandler
             fileHandler = new FileHandler(OrderService.class.getSimpleName() + " .log");
+            //change formatting from xml formatting to simple formatting
+            fileHandler.setFormatter(new SimpleFormatter());
         } catch (IOException e){
             e.printStackTrace();
         }

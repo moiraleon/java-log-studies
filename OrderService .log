@@ -1,52 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE log SYSTEM "logger.dtd">
-<log>
-<record>
-  <date>2021-09-02T23:19:12.371005Z</date>
-  <millis>1630624752371</millis>
-  <nanos>5000</nanos>
-  <sequence>0</sequence>
-  <logger>order.OrderService</logger>
-  <level>SEVERE</level>
-  <class>order.OrderService</class>
-  <method>addOrder</method>
-  <thread>1</thread>
-  <message>Placing order failed, cannot order in the future. User: 10 Order: [product.Product - name: jacket, id: 10]</message>
-</record>
-<record>
-  <date>2021-09-02T23:19:12.394495Z</date>
-  <millis>1630624752394</millis>
-  <nanos>495000</nanos>
-  <sequence>1</sequence>
-  <logger>order.OrderService</logger>
-  <level>WARNING</level>
-  <class>order.OrderService</class>
-  <method>getAllOrdersByUser</method>
-  <thread>1</thread>
-  <message>Cannot get orders for a non existing user, username: null id: 0</message>
-</record>
-<record>
-  <date>2021-09-02T23:19:12.395273Z</date>
-  <millis>1630624752395</millis>
-  <nanos>273000</nanos>
-  <sequence>2</sequence>
-  <logger>order.OrderService</logger>
-  <level>INFO</level>
-  <class>order.OrderService</class>
-  <method>getAllOrders</method>
-  <thread>1</thread>
-  <message>Getting all the orders</message>
-</record>
-<record>
-  <date>2021-09-02T23:19:12.397923Z</date>
-  <millis>1630624752397</millis>
-  <nanos>923000</nanos>
-  <sequence>3</sequence>
-  <logger>order.OrderService</logger>
-  <level>WARNING</level>
-  <class>order.OrderService</class>
-  <method>deleteOrder</method>
-  <thread>1</thread>
-  <message>Can't cancel order with id: 0 because it's already cancelled</message>
-</record>
-</log>
+Sep 02, 2021 5:22:50 PM order.OrderService addOrder
+SEVERE: Placing order failed, cannot order in the future. User: 10 Order: [product.Product - name: jacket, id: 10]
+Sep 02, 2021 5:22:50 PM order.OrderService getAllOrdersByUser
+WARNING: Cannot get orders for a non existing user, username: null id: 0
+Sep 02, 2021 5:22:50 PM order.OrderService getAllOrders
+INFO: Getting all the orders
+Sep 02, 2021 5:22:50 PM order.OrderService deleteOrder
+WARNING: Can't cancel order with id: 0 because it's already cancelled
