@@ -2,6 +2,7 @@ import order.Order;
 import order.OrderService;
 import product.Product;
 import user.User;
+import util.LoggingUtil;
 
 
 import java.io.IOException;
@@ -11,6 +12,9 @@ import java.util.List;
 public class CarvedRockFitness {
 
     public static void main(String[] args) throws IOException {
+        //call static initializer from main
+        LoggingUtil.initLogManager();
+
         //some code that pretends to be a user and an order
         User user = new User(10, "Maaike", "maaike@maaike.nl", LocalDateTime.now());
         Product product = new Product(10, "jacket", 70);

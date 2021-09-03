@@ -12,24 +12,24 @@ import java.util.logging.*;
 public class OrderService {
     private OrderRepository orderRepository = new OrderRepository();
     private static final Logger LOGGER = Logger.getLogger(OrderService.class.getName());
-
-    static {
-        FileHandler fileHandler = null;
-        try {
-            //ConsoleHandler consoleHandler = new ConsoleHandler(); changing from ConsoleHandler
-            fileHandler = new FileHandler(OrderService.class.getSimpleName() + " .log");
-            //change formatting from xml formatting to simple formatting
-            fileHandler.setFormatter(new SimpleFormatter());
-            //adding Log Filters
-           /* Filter filterAll = s -> false;
-            fileHandler.setFilter(filterAll); *///this will affect the Log file but not the console
-//            Filter filterAll = s -> false;
-//            LOGGER.setFilter(filterAll); influences the console
-        } catch (IOException e){
-            e.printStackTrace();
-        }
-        LOGGER.addHandler(fileHandler);
-    }
+//
+//    static {
+//        FileHandler fileHandler = null;
+//        try {
+//            //ConsoleHandler consoleHandler = new ConsoleHandler(); changing from ConsoleHandler
+//            fileHandler = new FileHandler(OrderService.class.getSimpleName() + " .log");
+//            //change formatting from xml formatting to simple formatting
+//            fileHandler.setFormatter(new SimpleFormatter());
+//            //adding Log Filters
+//           /* Filter filterAll = s -> false;
+//            fileHandler.setFilter(filterAll); *///this will affect the Log file but not the console
+////            Filter filterAll = s -> false;
+////            LOGGER.setFilter(filterAll); influences the console
+//        } catch (IOException e){
+//            e.printStackTrace();
+//        }
+//        LOGGER.addHandler(fileHandler);
+//    } removing when calling LogManager
 
 
     //get all logic

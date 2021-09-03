@@ -9,3 +9,5 @@ public class LoggingUtil {
         LogManager.getLogManager().readConfiguration(new FileInputStream("./src/main/resources/logging.properties"));
     }
 }
+
+//initializing log manager
